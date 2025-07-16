@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 32px;
@@ -24,50 +24,51 @@ export const InputSearchContainer = styled.div`
 `;
 
 export const Header = styled.header`
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
- margin-top: 32px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- strong {
-  color: #222;
-  font-size: 24px;
- }
- a {
-  color: ${({ theme }) => theme.colors.primary.main};
-  text-decoration: none;
-  font-weight: bold;
-  border: 2px solid ${({ theme }) => theme.colors.primary.main};
-  padding: 8px 16px;
-  border-radius: 4px;
-  &:hover {
-  background: ${({ theme }) => theme.colors.primary.main};
-  color: #fff;
-  transition: all 0.3s ease-in;
- }
- }
+  strong {
+    color: #222;
+    font-size: 24px;
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors.primary.main};
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid ${({ theme }) => theme.colors.primary.main};
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.primary.main};
+      color: #fff;
+      transition: all 0.3s ease-in;
+    }
+  }
 `;
 
 export const ListContainer = styled.div`
   margin-top: 24px;
 
-
   header {
     margin-bottom: 8px;
+
     button {
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
     }
 
     span {
-     margin-right: 8px;
-     font-weight: bold;
-     color: ${({ theme}) => theme.colors.primary.main}
+      margin-right: 8px;
+      font-weight: bold;
+      color: ${({ theme }) => theme.colors.primary.main};
     }
   }
-
 `;
 
 export const Card = styled.div`
@@ -82,6 +83,7 @@ export const Card = styled.div`
   & + & {
     margin-top: 16px;
   }
+
   .info {
     .contact-name {
       display: flex;
@@ -97,6 +99,7 @@ export const Card = styled.div`
         margin-left: 8px;
       }
     }
+
     span {
       display: block;
       font-size: 14px;
@@ -107,11 +110,11 @@ export const Card = styled.div`
   .actions {
     display: flex;
     align-items: center;
+
     button {
       background: transparent;
-      border:none;
+      border: none;
       margin-left: 8px;
     }
   }
 `;
-

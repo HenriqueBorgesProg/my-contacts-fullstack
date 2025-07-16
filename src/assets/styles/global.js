@@ -1,22 +1,15 @@
+// src/assets/styles/global.js
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Sora', sans-serif;
-  }
-
+  * { /* ... */ }
 
   body {
-    font-size: 16px;
-    background-color: ${( { theme } ) => theme.colors.backgroundColor};
-    color: ${( { theme } ) => theme.colors.gray[900]};
+    background-color: ${({ theme }) => theme.colors.background};
+    color:            ${({ theme }) => theme.colors.gray[900]};
   }
 
   button {
     cursor: pointer;
   }
-
 `;
