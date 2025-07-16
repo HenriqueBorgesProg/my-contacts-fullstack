@@ -1,16 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import {
-  Container,
-  InputSearchContainer,
-  Header,
-  ListContainer,
-  Card,
-} from "./styles";
+import  {
+   Container, InputSearchContainer ,Header, ListContainer, Card
+} from './styles';
 
-import arrow from "../../assets/images/icons/arrow.svg";
-import edit from "../../assets/images/icons/edit.svg";
-import trash from "../../assets/images/icons/trash.svg";
+import arrow from '../../assets/images/icons/arrow.svg';
+import edit from '../../assets/images/icons/edit.svg';
+import trash from '../../assets/images/icons/trash.svg';
 
 export default function Home() {
   return (
@@ -19,18 +15,10 @@ export default function Home() {
         <input type="text" placeholder="Pesquise pelo nome..." />
       </InputSearchContainer>
 
-      {/* <Header>
+      <Header>
         <strong>3 contatos</strong>
         <Link to="/new">Novo Contato</Link>
-      </Header> */}
-      <Link
-        to="/new"
-        onClick={(e) => {
-          console.log("Link clicado!", e.type);
-        }}
-      >
-        Novo Contato
-      </Link>
+      </Header>
 
       <ListContainer>
         <header>
@@ -59,6 +47,7 @@ export default function Home() {
             </button>
           </div>
         </Card>
+
       </ListContainer>
     </Container>
   );
